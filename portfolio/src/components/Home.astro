@@ -12,17 +12,20 @@
         Full Stack Developer
     </p>
     <div class="flex flex-col justify-center sm:flex-row gap-3 sm:gap-4 mb-4 w-full max-w-xs sm:max-w-none">
-        <button class="flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base border-2 border-white text-white rounded-lg hover:border-blue-500 hover:text-gray-900 transition-all duration-300 w-full sm:w-auto sm:min-w-[140px]">
-            <img src="./src/assets/Github.svg" alt="GitHub" class="w-4 h-4 sm:w-5 sm:h-5"> 
+        <button class="flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-[#628CF6] text-white rounded-lg hover:border-blue-500 hover:text-gray-900 transition-all duration-300 w-full sm:w-auto sm:min-w-[140px]">
+            <img src="./src/assets/Github.svg" alt="GitHub" class="w-5 h-5 sm:w-6 sm:h-6"> 
                 GitHub
         </button>
-            <button class="flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base border-2 border-white text-white rounded-lg hover:border-blue-500 hover:text-gray-900 transition-all duration-300 w-full sm:w-auto sm:min-w-[140px]">
-                <img src="./src/assets/Linkedin.svg" alt="LinkedIn" class="w-4 h-4 sm:w-5 sm:h-5">
+            <button class="flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-[#628CF6] text-white rounded-lg hover:border-blue-500 hover:text-gray-900 transition-all duration-300 w-full sm:w-auto sm:min-w-[140px]">
+                <img src="./src/assets/Linkedin.svg" alt="LinkedIn" class="w-5 h-5 sm:w-6 sm:h-6">
                  Linkedin
             </button>
     </div>
-    <button class="flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base text-white rounded-lg border-2 border-yellow-500 transition-all duration-300 font-semibold w-full max-w-xs sm:w-auto">
-        <img src="./src/assets/CV.svg" alt="CV" class="w-4 h-4 sm:w-5 sm:h-5"> 
+    <button class="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base text-white rounded-lg border-2 hover:bg-yellow-500 hover:border-black hover:!text-black border-yellow-500 transition-all duration-300 font-semibold w-full max-w-xs sm:w-auto">
+        <div class="relative w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center">
+            <img src="./src/assets/CV.svg" alt="CV" class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0"> 
+            <img src="./src/assets/CV_negative.svg" alt="CV_negative" class="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"> 
+        </div>
         Download CV
     </button>
 </section>
