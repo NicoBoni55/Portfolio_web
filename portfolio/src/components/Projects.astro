@@ -1,0 +1,56 @@
+---
+import ethosTrackImage from '../assets/EthosTrack.jpg'
+
+    interface Technology {
+        name: string;
+        color: string;
+    }
+
+    interface Project {
+        id: string;
+        title: string;
+        description: string;
+        technologies: Technology[];
+        link: string;
+        image?: ImageMetadata;
+        github?: string;
+    }
+
+    interface Props {
+        projects?: Project[];
+    }
+
+    const defaultProjects: Project[] = [
+        {
+            id: "1",
+            title: "EmilyConnect",
+            description: "Mobile App",
+            technologies: [
+                {name: "Flutter", color: "bg-blue-500"},
+                {name: "Dart", color: "bg-green-500"},
+                {name: "Firebase", color: "bg-orange-500"},
+            ],
+            link: "#",
+            github: "",
+        },
+        {
+            id: "2",
+            title: "EthosTrack",
+            description: "Mobile App for habit tracking",
+            technologies: [
+                {name: "Flutter", color: "bg-blue-500"},
+                {name: "Dart", color: "bg-green-500"},
+                {name: "Firebase", color: "bg-orange-500"},
+            ],
+            link: "#",
+            image: ethosTrackImage,
+            github: "",
+        }
+    ];
+---
+
+<section class="min-h-screen flex flex-col justify-center items-center gap-4 px-4 sm:px-6 md:px-8 lg:px-12">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 text-center">
+        <span class="text-blue-500">Projects</span>
+    </h2>
+</section>
